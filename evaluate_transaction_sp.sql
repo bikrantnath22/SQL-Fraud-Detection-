@@ -80,8 +80,8 @@ END //
 
 DELIMITER ;
 
--- ==========================================
+
 -- Example Usage:
--- ==========================================
+
 -- CALL evaluate_transaction(5, @total_score);
 -- SELECT @total_score;
