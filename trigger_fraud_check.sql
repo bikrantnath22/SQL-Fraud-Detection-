@@ -19,9 +19,9 @@ BEGIN
     DECLARE v_rule2_weight DECIMAL(5,2);
     DECLARE v_rule3_weight DECIMAL(5,2);
 
-    -- ==========================================
+  
     -- 1. Calculate Total Risk Score
-    -- ==========================================
+    
 
     -- Rule 1: High Velocity
     SELECT COUNT(*) INTO v_velocity_count
@@ -59,9 +59,9 @@ BEGIN
         END IF;
     END IF;
 
-    -- ==========================================
+   
     -- 2. Insert into flagged_transactions if threshold exceeded
-    -- ==========================================
+
     -- NOTE: Threshold is 50 as requested. However, since the weights are (8.5, 7.0, 9.0), 
     -- the maximum score is 24.5. You will need to either lower this threshold (e.g. 15.0) 
     -- or increase the weights in the fraud_rules table for this to trigger.
